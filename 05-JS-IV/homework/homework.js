@@ -106,7 +106,7 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
-  usuario['password'] = nuevaPassword;
+  usuario.password = nuevaPassword;
   return usuario;
 }
 
@@ -158,7 +158,7 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-  producto['calcularPrecioDescuento'] = function () {
+  producto.calcularPrecioDescuento = function () {
     var descuento = this.precio * this.porcentajeDeDescuento;
     return this.precio - descuento;
   }
